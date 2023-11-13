@@ -33,7 +33,7 @@ map_t *init_map(int fd)
     for (int i = 0; i < map->height; i++) {
         map->lines[i] = malloc(sizeof(char)*10000);
     }
-    printf("%d\n", map->height);
+    my_printf("%d\n", map->height);
     map->width = read_lines(fd, map);
     return map;
 }

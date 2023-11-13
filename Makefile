@@ -29,6 +29,7 @@ fclean: clean
 re: fclean all
 
 $(NAME) : $(OBJ)
-		gcc -o $(NAME) $(SRC) -L.-lmy
+		make -C lib/
+		gcc -o $(NAME) $(OBJ) -L./ -lmy
 
 .PHONY : all re fclean clean
