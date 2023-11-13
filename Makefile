@@ -7,7 +7,9 @@
 
 NAME = setting_up
 
-SRC = main.c
+SRC = setting_up.c\
+	  solver.c\
+	  util.c
 
 OBJ = $(SRC:.c=.o)
 
