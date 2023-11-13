@@ -34,7 +34,7 @@ void printf_hex(long int b, bool uppercase)
         } else {
             temp = temp + (uppercase ? 55 : 87);
         }
-        hexa_Number[i++] = temp;
+        hexa_Number[i + 1] = temp;
         decimal_Number = decimal_Number / 16;
     }
     for (int j = i -1; j > 0; j--) {
