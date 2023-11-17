@@ -38,7 +38,5 @@ int main(int ac, char **av)
 
     square = find_bsq(map);
     display_lines(map, square);
-    my_printf("%d\n", square->length);
-    my_printf(" %d %d\n", square->pos->x, square->pos->y);
     free(map);
 }
