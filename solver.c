@@ -31,6 +31,7 @@ int biggest_valid_sq(map_t *map, int x, int y)
     square_t square = {
         .pos = &pos, .length = 0,
     };
+
     while (is_valid_sq(&square) &&
     is_inbound(map, x + square.length, y + square.length)) {
         square.length++;

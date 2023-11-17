@@ -66,6 +66,6 @@ int is_inbound(map_t *map, int x, int y)
 
 int is_inside(square_t *square, int x, int y)
 {
-    return (x >= square->pos->x && x < (square->pos->x + square->length)) &&
-    (y >= square->pos->y && y < (square->pos->y + square->length));
+    return (x >= square->pos->x && x <= (square->pos->x + square->length)) &&
+    (y >= square->pos->y && y <= (square->pos->y + square->length));
 }
